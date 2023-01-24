@@ -1,0 +1,220 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: white;
+    margin: 10px;
+}
+
+.tytle{
+    font-size: 30px;
+    text-align: center;
+    border-top: 3px rgb(212, 212, 212) solid;
+    border-bottom: 3px rgb(212, 212, 212) solid;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.element{
+    display: flex;
+    gap: 30px ;
+    justify-content: center;
+    border: 3px rgb(212, 212, 212) solid;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(211, 211, 211);
+    
+    font-size: 20px;
+    
+    border-bottom: 7px rgb(205, 205, 205) double;
+}
+.Monndai{
+    display: flex;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-top: none;
+    font-size: 20px;
+}
+
+.element.Monndai {}
+
+
+#question{
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.questions{
+    border-bottom:2px rgb(186, 203, 201) solid ;
+    height: 25px;
+}
+#judge{
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.judges{
+    border-bottom:2px rgb(186, 203, 201) solid ;
+    height: 25px;
+    color: red;
+}
+
+#inputAnswer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px 0;
+    width: auto;
+    flex: 1;
+}
+.InputAnsers{
+    height: 25px;
+    font-size: 15px;
+    border: none;
+    border-bottom: 1px rgb(186, 203, 201) solid;
+    keyboard
+}
+
+.checks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+.checks p{
+    font-size: 20px;
+    color: red;
+}
+.checkButton{
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(255, 176, 176);
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    border-radius: 10px;
+    border: 3px rgb(255, 127, 127) dashed;
+}
+
+
+
+.nextButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 5px rgb(209, 209, 209) dashed;
+    padding: 10px;
+    padding: 30px 0 60px 0;
+}
+
+.databutton{
+    opacity: 0.3; 
+    border-radius: 2px;
+    border: 1px solid ;
+    padding: 5px 10px;
+}
+#alldataButton{
+    opacity: 1;
+}
+
+#selectMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    
+}
+.radioButton{
+    margin: 0 20px;
+    appearance: none;
+    
+}
+.radioButton[type="radio"]{
+    border: 2px dotted rgb(176, 176, 176);
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    padding: 4px;
+}
+.radioButton[type="radio"]:active{
+    width: 15px;
+    height: 15px;
+}
+.radioButton[type="radio"]:checked{
+    border: 2px solid #555;
+    background: #555;
+    background-clip: content-box ;
+}
+
+.Qnum{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 30px 0 20px 0;
+}
+.Qnum p{
+    margin: 0;
+}
+.Qrange{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.Qrange p{
+    margin: 0;
+}
+
+.selectNum{
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    /* border-radius: 10px; */
+    border: none;
+    border-bottom: 2px rgb(177, 177, 177) dashed;
+}
+.label_mini{
+    font-size: small;
+    color: gray;
+    border-bottom:0.5px gray solid ;
+}
+
+
+.makeQbutton{
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px rgb(14, 180, 14) dashed;
+    color: rgb(14, 180, 14);
+    background-color: rgb(185, 238, 185);
+    border-radius: 10px;
+}
+
+
+
+.button{
+    opacity: 0.3; 
+}
+.button:hover{
+    opacity: 1;
+    border: solid;
+}
+
+.button:active{
+    font-size: 12px;
+}

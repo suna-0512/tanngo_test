@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!--ススマホで表示する用-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HTML単語テスト</title>
+
+    <!--CSSは同じフォルダに入れる-->
+    <link rel="stylesheet" href="tango_test_css.css" />
+    
+
+    <!--ここからＣＳＳ-->
+    <style>
+    </style>
+
+</head>
+    
+<body>
+
+    <p class="tytle">単語テスト</p>
+
+    <div class="element header">
+        <p >問題</p>
+        <p >判定</p>
+    </div>
+
+    <div class="element Monndai"> 
+
+        <!--問題文-->
+        <div class="text" id="question"></div>
+
+        <!--正誤判定-->
+        <div class="text" id="judge"></div>
+
+    </div>
+
+    <div class="checks">
+        <!--判定を表示ボタン-->
+        <input class="button checkButton" type = "button" value="採点" onclick="checkButton_pushed()">
+        <p id="point"></p>
+    </div>
+
+    <!--次の問題に進むボタン-->
+    <div class="nextButton">
+
+        <!--すべてか間違えた問題からか-->
+        <form name="Qtype">
+            <input class="databutton" id="alldataButton" type="button" value="すべての問題から出題" onclick="selectMenu('alldata')"> 
+            <input class="databutton" id="reminddataButton" type="button" value="間違えた問題から出題" onclick="selectMenu('reminddata')">
+        </form>
+
+        <!--メニュー-->
+        <div id="selectMenu">
+            <!--ランダムか順番か-->
+            <form name="Qalign">
+                <input type="radio" class="radioButton" id="random" name="selectQalign" value="random" >
+                <label for="random">ランダムに問題を出す</label>
+                <input type="radio" class="radioButton" id="order" name="selectQalign" value="order" checked>
+                <label for="order">順番に問題を出す</label>
+            </form>
+
+            <!--問題の数を選ぶ-->
+            <div class="Qnum">
+            <label for="Qnum" class="label_mini">出題数</label>                
+                <input class="selectNum" id="max_num" type="number" max="100" min="0" placeholder="問題数を入力" value="10">
+                <p>問</p>
+            </div>
+
+            <!--問題の範囲を選ぶ-->
+            <div class="Qrange">
+                <label for="Qrange" class="label_mini">出題範囲</label>
+                <input class="selectNum" id="num_range_min" type="number" min="0" placeholder="はじめの問題番号を入力" value="1">
+                <p>番 ～ </p>
+                <input class="selectNum" id="num_range_max" type="number" min="0" placeholder="終わりの問題番号を入力" value="10">  
+                <p>番</p>
+            </div>
+
+        </div>
+
+        <!--問題を作るボタン-->
+        <input class="button makeQbutton" id ="createQButton" type="button" value="問題を作る" onclick="makeQuestions()">
+
+
+    </div>
+
+    
+
+
+
+    <!--ここからJavaScript-->
+    <script src="tanngo_test3.js"></script>
+
+</body>
+
+</html>
