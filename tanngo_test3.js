@@ -82,6 +82,7 @@ var selectMenu = function(dataType){
         Meaning = remindCorrectAnswer
         document.getElementById("alldataButton").style.opacity = "0.3";
         document.getElementById("reminddataButton").style.opacity = "1";
+        
     }
    
 
@@ -104,24 +105,43 @@ var makeQuestions = function(){
     var rangeMax = parseInt(numRangeMax.value) ;
     var rangeMin = parseInt(numRangeMin.value) -1;
 
+
+    //間違えた問題のとき、出題範囲の入力の影響を受けるのを防止
+    if (Word == remindQuestion){
+        rangeMax = WL;
+        rangeMin = 0;
+    }
+
     //入力された問題数を取得
     max = document.getElementById("max_num").value;
     console.log(`max=${max}`);
 
-    if (max > WL){
-        max = WL
-    }
 
     
+    //ランダムか順番かを取得
+    var Qalign = document.forms.Qalign.selectQalign.value;
+
+    //順番の時、NaN undefined　となるのを防止
+    if (Qalign == "order"){
+        //問題数がデータ数より多い場合、データ数まで問題数を減らす
+        if (max > WL){
+            max = WL
+        }
+
+        //問題数が出題範囲より多い場合〃
+        if (max > rangeMax-rangeMin){
+            max = rangeMax-rangeMin
+        }
+    }
+
     //ランダムか順番かで n の配列を作る
     n.length = 0    //配列の中身を初期化
-    var Qalign = document.forms.Qalign.selectQalign.value;
     switch (Qalign){
         case "random" :
             console.log("random")
             //ランダムな数字の配列を作る
-            for (let i = 0; i < max; i++) {
-                n.push(Math.floor(Math.random()*(rangeMax+rangeMin+1)+rangeMin))
+            for (let i = 0; i < max; i+=1) {
+                n.push(Math.floor(Math.random()*(rangeMax+rangeMin)+rangeMin))
             }
             break
         
@@ -145,7 +165,7 @@ var makeQuestions = function(){
     for (let i = 0; i < max; i += 1){
         question = Word[n[i]]
         Questions += `<p class="questions" id = question${i+1}>問題${i+1} : ${n[i]+1} . ${question}</p>`
-        Questions += `<input class = "InputAnsers" id = "inputAnswer${i+1}" type="text" placeholder="解答を入力">`
+        Questions += `<input class = "InputAnswers" id = "inputAnswer${i+1}" type="text" placeholder="解答を入力">`
         Questions += "</br>"
     }
     
@@ -161,7 +181,6 @@ var checkButton_pushed = function() {
     //答え
     var Judges = ""
     var maruNum = 0 ;
-    var sannkakuNum = 0 ;
     
 
     for (let i = 0; i < max; i += 1){
@@ -180,7 +199,7 @@ var checkButton_pushed = function() {
         
         } else if (correctAnswer.includes(inputAnswer.value) == true && inputAnswer.value != "") {
             judge = "○  " + correctAnswer;
-            sannkakuNum += 1 ;
+            maruNum += 1 ;
 
             //間違えた問題リストから今正解した問題を一つ消す
             remindQuestion.splice(n[i],1)
