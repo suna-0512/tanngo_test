@@ -23,6 +23,26 @@ numRangeMax.max = `${word.length}`;
 numRangeMin.max = `${word.length}`;
 numRangeMax.value = `${word.length}`;
 
+//ランダムか順番かを選ぶときに選んでいない方の色を薄くする
+var pattern = "alldata";
+var QalignButtonAnimation = function(pattern){
+    let orderButton = document.getElementById("order");
+    let labelForOrderbutton = document.getElementById("labelForOrderbutton")
+    orderButton.addEventListener('click', function() {
+        labelForRandombutton.style.opacity = "0.2";
+        labelForOrderbutton.style.opacity = "1";
+    });
+
+    if (pattern == "alldata"){
+        let randomButton = document.getElementById("random");
+        let labelForRandombutton = document.getElementById("labelForRandombutton")
+        randomButton.addEventListener('click', function() {
+            labelForRandombutton.style.opacity = "1";
+            labelForOrderbutton.style.opacity = "0.2";
+        });
+    }
+}
+QalignButtonAnimation(pattern)
 
 
 //問題のタイプを選ぶボタンを表示
@@ -36,9 +56,9 @@ var selectMenu = function(dataType){
             <!--ランダムか順番か-->
             <form name="Qalign">
                 <input type="radio" class="radioButton" id="random" name="selectQalign" value="random" >
-                <label for="random">ランダムに問題を出す</label>
+                <label for="random" id="labelForRandombutton">ランダムに問題を出す</label>
                 <input type="radio" class="radioButton" id="order" name="selectQalign" value="order" checked>
-                <label for="order">順番に問題を出す</label>
+                <label for="order" id="labelForOrderbutton">順番に問題を出す</label>
             </form>
 
             <!--問題の数を選ぶ-->
@@ -61,6 +81,7 @@ var selectMenu = function(dataType){
         Meaning = meaning;
         document.getElementById("alldataButton").style.opacity = "1";
         document.getElementById("reminddataButton").style.opacity = "0.3";
+        pattern = "alldata"
 
     }else if (dataType == "reminddata"){
         console.log("reminddata1")
@@ -68,7 +89,7 @@ var selectMenu = function(dataType){
             <!--ランダムか順番か-->
             <form name="Qalign">
                 <input type="radio" class="radioButton" id="order" name="selectQalign" value="order" checked>
-                <label for="order">順番に問題を出す</label>
+                <label for="order" id="labelForOrderbutton">順番に問題を出す</label>
             </form>
 
             <!--問題の数を選ぶ-->
@@ -82,14 +103,16 @@ var selectMenu = function(dataType){
         Meaning = remindCorrectAnswer
         document.getElementById("alldataButton").style.opacity = "0.3";
         document.getElementById("reminddataButton").style.opacity = "1";
+        pattern = "reminddata"
         
     }
    
 
     document.getElementById("selectMenu").innerHTML = selectMenuElement;
-
+    QalignButtonAnimation(pattern)
 
 }
+
 
 
 //問題を作る関数
@@ -164,7 +187,7 @@ var makeQuestions = function(){
     var Questions = ""
     for (let i = 0; i < max; i += 1){
         question = Word[n[i]]
-        Questions += `<p class="questions" id = question${i+1}>問題${i+1} : ${n[i]+1} . ${question}</p>`
+        Questions += `<p class="questions" id = question${i+1}>問${i+1} : ${n[i]+1} . ${question}</p>`
         Questions += `<input class = "InputAnswers" id = "inputAnswer${i+1}" type="text" placeholder="解答を入力">`
         Questions += "</br>"
     }
@@ -221,7 +244,7 @@ var checkButton_pushed = function() {
     document.getElementById("judge").innerHTML = Judges;
 
     //点数
-    document.getElementById("point").innerHTML = `${maruNum}/${max} 点`;
+    document.getElementById("point").innerHTML = `${maruNum} /${max} 点`;
 
 }
 
