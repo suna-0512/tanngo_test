@@ -17,8 +17,15 @@
     
 <body>
 
-    <p class="tytle">単語テスト</p>
-
+    <p class="tytle">ー 単語テスト ー</p>
+    <div class="introduction">
+        <span class="introTitle">Attention</span>
+        <div>
+            <p>これは<span class="boldtext">一問一答形式</span>のテストです。</p>
+            <p>問題作成はページ下部で出題形式を選択して「<span class="boldtext">問題を作る</span>」ボタンから。</p>
+            <p>解答を入力して「<span class="boldtext">採点</span>」ボタンを押すと採点されます。</p>
+        </div>
+    </div>
     <div class="element header">
         <p >問題</p>
         <p >判定</p>
@@ -54,9 +61,9 @@
             <!--ランダムか順番か-->
             <form name="Qalign">
                 <input type="radio" class="radioButton" id="random" name="selectQalign" value="random" >
-                <label for="random">ランダムに問題を出す</label>
+                <label for="random" id="labelForRandombutton">ランダムに問題を出す</label>
                 <input type="radio" class="radioButton" id="order" name="selectQalign" value="order" checked>
-                <label for="order">順番に問題を出す</label>
+                <label for="order" id="labelForOrderbutton">順番に問題を出す</label>
             </form>
 
             <!--問題の数を選ぶ-->
