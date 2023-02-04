@@ -6,15 +6,40 @@ body{
     margin: 10px;
 }
 
+/*単語テストの文字*/
 .tytle{
-    font-size: 70px;
+    font-size: 50px;
     text-align: center;
-    border-top: 3px rgb(212, 212, 212) solid;
-    border-bottom: 3px rgb(212, 212, 212) solid;
-    background-color: rgb(231, 231, 231);
     padding: 10px;
-    margin-bottom: 50px;
+    margin-bottom:0 ;
 }
+/*あてんしょん*/
+.introduction{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    margin: 100px 0;
+    padding: 20px;
+    border-bottom: 5px dotted;
+    border-top: 5px dotted ;
+}
+.introTitle{
+    position: absolute;
+    top: -34.5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 40px;
+    color: red;
+    padding: 0 20px;
+}
+.boldtext{
+    font-size: 30px;
+    padding: 0 8px;
+}
+
+/*テスト内容*/
 .element{
     display: flex;
     gap: 30px ;
@@ -25,12 +50,15 @@ body{
 .header{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(211, 211, 211);
-    
-    font-size: 37px;
-    
+    background-color: rgb(255, 0, 0);
+    background: repeating-linear-gradient(-45deg ,rgb(255, 255, 255), rgb(233, 233, 233) 15px);
     border-bottom: 7px rgb(205, 205, 205) double;
 }
+.header p{
+    margin: 10px;
+    font-size: 45px;
+}
+
 .Monndai{
     display: flex;
     padding: 20px;
@@ -38,8 +66,6 @@ body{
     border-top: none;
     font-size: 35px;
 }
-
-.element.Monndai {}
 
 
 #question{
@@ -86,45 +112,50 @@ body{
     align-items: center;
     margin: 0;
     padding: 50px;
-}
-.checks p{
-    font-size: 37px;
+    font-size: 50px;
     color: red;
 }
 .checkButton{
-    width: 550px;
-    height: 90px;
-    font-size: 37px;
+    width: 700px;
+    height: 120px;
+    font-size: 50px;
     background-color: rgb(255, 176, 176);
     color: rgb(255, 0, 0);
     font-weight: bold;
     border-radius: 10px;
-    border: 3px rgb(255, 127, 127) dashed;
+    border: 5px rgb(255, 127, 127) dashed;
 }
 
 
 
+/*ここから問題の種類を選ぶ欄*/
 .nextButton{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 5px rgb(209, 209, 209) dashed;
+    border-top: 15px rgb(202, 202, 202) double;
     padding: 10px;
-    padding: 60px 0 200px 0;
+    padding: 80px 0 200px 0;
     font-size: 40px;
+    
 }
 
+/*すべての問題か間違えた問題か*/
 .databutton{
     opacity: 0.3; 
-    border-radius: 2px;
-    border: 1px solid ;
+    border-radius: 5px;
+    border: 1px solid rgb(14, 180, 14);
     padding: 10px 20px;
     font-size: 40px;
+    color: rgb(14, 180, 14);
+    background-color: rgb(201, 254, 201);
 }
 #alldataButton{
     opacity: 1;
+    
 }
 
+/*ここから順番orランダム、出題数、出題範囲*/
 #selectMenu{
     display: flex;
     flex-direction: column;
@@ -132,19 +163,24 @@ body{
     margin: 60px 0;
 }
 
+/*ランダムor順番*/
 form{
     display: flex;
-    align-items: center;
-    
+    align-items: center; 
 }
 .radioButton{
     margin: 0 20px;
     appearance: none;
-    
+}
+form label{
+    border-bottom: dotted rgb(14, 180, 14) 5px;
+}
+#labelForRandombutton{
+    opacity: 0.2;
 }
 .radioButton[type="radio"]{
     border: 2px dotted rgb(176, 176, 176);
-    border-radius: 18px;
+    border-radius: 10px;
     width: 50px;
     height: 50px;
     margin-right: 10px;
@@ -153,69 +189,80 @@ form{
 .radioButton[type="radio"]:active{
     width: 40px;
     height: 40px;
+    -webkit-width: 40px;
+    -webkit-height: 40px;
 }
 .radioButton[type="radio"]:checked{
     border: 2px solid #555;
     background: rgba(60, 179, 60, 0.703);
     background-clip: content-box ;
+    -webkit-border: 2px solid #555;
+    -webkit-background: rgba(60, 179, 60, 0.703);
+    -webkit-background-clip: content-box ;
 }
 
+/*出題数、出題範囲*/
+.selectNum{
+    width: 100px;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(14, 180, 14);
+    border: none;
+    border-bottom: 3px rgb(14, 180, 14) dashed;
+    border-radius: none;
+}
+.label_mini{
+    font-size: 30px;
+    color: gray;
+    border-bottom:0.5px rgb(14, 180, 14) solid ;
+}
+/*出題数*/
 .Qnum{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     margin: 30px 0 20px 0;
 }
 .Qnum p{
     margin: 0;
 }
+/*出題範囲*/
 .Qrange{
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     margin-bottom: 20px;
 }
 .Qrange p{
     margin: 0;
 }
 
-.selectNum{
-    width: 60px;
-    height: 30px;
-    font-size: 37px;
-    text-align: center;
-    /* border-radius: 10px; */
-    border: none;
-    border-bottom: 2px rgb(177, 177, 177) dashed;
-}
-.label_mini{
-    font-size: 30px;
-    color: gray;
-    border-bottom:0.5px gray solid ;
-}
 
 
+/*問題を作るボタン*/
 .makeQbutton{
-    width: 550px;
-    height: 90px;
-    font-size: 37px;
+    width: 700px;
+    height: 120px;
+    font-size: 50px;
     font-weight: bold;
-    border: 3px rgb(14, 180, 14) dashed;
+    border: 5px rgb(14, 180, 14) dashed;
     color: rgb(14, 180, 14);
     background-color: rgb(185, 238, 185);
     border-radius: 10px;
 }
 
 
-
+/*ボタン全体のムーブ*/
 .button{
     opacity: 0.3; 
 }
 .button:hover{
     opacity: 1;
-    border: solid;
+    border: solid 5px;
+    -webkit-opacity: 1;
+    -webkit-border: solid;
 }
-
 .button:active{
+    -webkit-font-size: 12px;
     font-size: 12px;
 }
