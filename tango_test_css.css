@@ -86,7 +86,7 @@ body{
     justify-content: space-around;
 }
 .judges{
-    color: red;
+    color: rgb(0, 168, 196);
     height: 90.88px;
     margin: 0px;
 }
@@ -144,11 +144,11 @@ body{
 .databutton{
     opacity: 0.3; 
     border-radius: 5px;
-    border: 1px solid rgb(14, 180, 14);
+    border: 1px solid rgb(0, 168, 196);
     padding: 10px 20px;
     font-size: 40px;
-    color: rgb(14, 180, 14);
-    background-color: rgb(201, 254, 201);
+    color: rgb(0, 168, 196);
+    background-color: rgb(245, 245, 245);
 }
 #alldataButton{
     opacity: 1;
@@ -173,7 +173,7 @@ form{
     appearance: none;
 }
 form label{
-    border-bottom: dotted rgb(14, 180, 14) 5px;
+    border-bottom: dotted rgb(0, 168, 196) 5px;
 }
 #labelForRandombutton{
     opacity: 0.2;
@@ -194,10 +194,10 @@ form label{
 }
 .radioButton[type="radio"]:checked{
     border: 2px solid #555;
-    background: rgba(60, 179, 60, 0.703);
+    background: rgba(0, 149, 160, 0.703);
     background-clip: content-box ;
     -webkit-border: 2px solid #555;
-    -webkit-background: rgba(60, 179, 60, 0.703);
+    -webkit-background: rgba(0, 168, 196, 0.703);
     -webkit-background-clip: content-box ;
 }
 
@@ -206,15 +206,15 @@ form label{
     width: 100px;
     font-size: 45px;
     text-align: center;
-    color: rgb(14, 180, 14);
+    color: rgb(0, 168, 196);
     border: none;
-    border-bottom: 3px rgb(14, 180, 14) dashed;
+    border-bottom: 3px rgb(0, 168, 196) dashed;
     border-radius: none;
 }
 .label_mini{
     font-size: 30px;
     color: gray;
-    border-bottom:0.5px rgb(14, 180, 14) solid ;
+    border-bottom:0.5px rgb(0, 168, 196) solid ;
 }
 /*出題数*/
 .Qnum{
@@ -237,7 +237,37 @@ form label{
     margin: 0;
 }
 
-
+/*リセットグループ*/
+.resetgroup{
+    margin-top:30px;
+    padding: 20px;
+    border: solid 3px black;
+    border-radius: 7px;
+}
+.resetgroup p{
+    margin: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(133, 133, 133);
+}
+#resetButton{
+    font-size: 30px;
+    width: 400px;
+    height: 80px;
+    border: 3.5px rgb(0, 0, 0) dashed;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+#resetButton:hover{
+    -webkit-border: solid;
+    background-color: gray;
+    color: white;
+}
+#resetButton:active{
+    -webkit-font-size: 12px;
+    font-size: 12px;
+}
 
 /*問題を作るボタン*/
 .makeQbutton{
@@ -245,9 +275,9 @@ form label{
     height: 120px;
     font-size: 50px;
     font-weight: bold;
-    border: 5px rgb(14, 180, 14) dashed;
-    color: rgb(14, 180, 14);
-    background-color: rgb(185, 238, 185);
+    border: 5px rgb(0, 168, 196) dashed;
+    color: rgb(0, 168, 196);
+    background-color: rgba(157, 220, 223, 0.692);
     border-radius: 10px;
 }
 
