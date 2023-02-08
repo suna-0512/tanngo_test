@@ -26,24 +26,23 @@ numRangeMax.value = `${word.length}`;
 //ランダムか順番かを選ぶときに選んでいない方の色を薄くする
 var pattern = "alldata";
 var QalignButtonAnimation = function(pattern){
-    let orderButton = document.getElementById("order");
-    let labelForOrderbutton = document.getElementById("labelForOrderbutton")
-    orderButton.addEventListener('click', function() {
-        labelForRandombutton.style.opacity = "0.2";
-        labelForOrderbutton.style.opacity = "1";
-    });
-
     if (pattern == "alldata"){
         let randomButton = document.getElementById("random");
         let labelForRandombutton = document.getElementById("labelForRandombutton")
+        let orderButton = document.getElementById("order");
+        let labelForOrderbutton = document.getElementById("labelForOrderbutton")
+    
         randomButton.addEventListener('click', function() {
             labelForRandombutton.style.opacity = "1";
             labelForOrderbutton.style.opacity = "0.2";
         });
+        orderButton.addEventListener('click', function() {
+            labelForRandombutton.style.opacity = "0.2";
+            labelForOrderbutton.style.opacity = "1";
+        });
     }
 }
 QalignButtonAnimation(pattern)
-
 
 //問題のタイプを選ぶボタンを表示
 var selectMenu = function(dataType){
@@ -98,6 +97,10 @@ var selectMenu = function(dataType){
                 <input class="selectNum" id="max_num" type="number" max="${remindQuestion.length}" min="0" placeholder="問題数を入力" value="${remindQuestion.length}">
                 <p>問</p>
             </div>
+            <div class="resetgroup">
+                <p>現在の誤答数：${remindQuestion.length} 問</p>
+            <input type="button" id="resetButton" class="button databutton" value="間違えた問題をリセット" onclick="resetButton()">
+        </div>
         `;
         Word = remindQuestion;
         Meaning = remindCorrectAnswer
@@ -113,6 +116,12 @@ var selectMenu = function(dataType){
 
 }
 
+var resetButton = function(){
+    remindQuestion.length = 0;
+    remindCorrectAnswer.length = 0;
+    console.log(remindQuestion,remindCorrectAnswer);
+    selectMenu("reminddata");
+}
 
 
 //問題を作る関数
@@ -209,11 +218,13 @@ var checkButton_pushed = function() {
     for (let i = 0; i < max; i += 1){
         correctAnswer = Meaning[n[i]];
         var inputAnswer = document.getElementById(`inputAnswer${i+1}`);
+        var style = "";
 
         //正誤判定
         if (inputAnswer.value == correctAnswer){
-            judge = "◎";
+            judge = "&ensp;◎";
             maruNum += 1
+            style = "style='color: rgb(0 168 196);font-size: 70px;'"
 
             //間違えた問題リストから今正解した問題を一つ消す
             remindQuestion.splice(n[i],1)
@@ -221,8 +232,8 @@ var checkButton_pushed = function() {
             console.log(remindQuestion,remindCorrectAnswer);
         
         } else if (correctAnswer.includes(inputAnswer.value) == true && inputAnswer.value != "") {
-            judge = "○  " + correctAnswer;
-            maruNum += 1 ;
+            judge = "△&ensp;" + correctAnswer;
+            maruNum += 0.5 ;
 
             //間違えた問題リストから今正解した問題を一つ消す
             remindQuestion.splice(n[i],1)
@@ -230,7 +241,8 @@ var checkButton_pushed = function() {
             console.log(remindQuestion,remindCorrectAnswer);
         
         } else {
-            judge = "✕  " + correctAnswer;
+            judge = "✕&ensp;" + correctAnswer;
+            style = "style='color:red;'"
 
             //間違えた問題リストに入れる
             remindQuestion.push(Word[n[i]]);
@@ -238,13 +250,13 @@ var checkButton_pushed = function() {
             console.log(remindQuestion,remindCorrectAnswer);
         }
         
-        Judges += `<p class="judges" id="judge${i+1}">${judge}</p>`
+        Judges += `<p class="judges" id="judge${i+1}"  ${style}>${judge}</p>`
 
     } 
     document.getElementById("judge").innerHTML = Judges;
 
     //点数
-    document.getElementById("point").innerHTML = `${maruNum} /${max} 点`;
+    document.getElementById("point").innerHTML = `${maruNum} /${max}.0 点`;
 
 }
 
