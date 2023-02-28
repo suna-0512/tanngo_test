@@ -263,10 +263,12 @@ form label{
     -webkit-border: solid;
     background-color: gray;
     color: white;
+    border: 5px rgb(0, 0, 0)  solid;
 }
 #resetButton:active{
     -webkit-font-size: 12px;
     font-size: 12px;
+    
 }
 
 /*問題を作るボタン*/
