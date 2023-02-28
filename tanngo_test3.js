@@ -117,10 +117,15 @@ var selectMenu = function(dataType){
 }
 
 var resetButton = function(){
-    remindQuestion.length = 0;
-    remindCorrectAnswer.length = 0;
-    console.log(remindQuestion,remindCorrectAnswer);
-    selectMenu("reminddata");
+    var confirmation = confirm("この操作は取り消せません。\n間違えた問題をリセットしますか？");
+    //「OK」を選択したらtrue が返ってくる
+    if (confirmation == true){
+        remindQuestion.length = 0;
+        remindCorrectAnswer.length = 0;
+        console.log(remindQuestion,remindCorrectAnswer);
+        selectMenu("reminddata"); //セレクトメニュー画面を更新
+    }
+
 }
 
 
