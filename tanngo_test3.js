@@ -1,6 +1,41 @@
-//データ
-var word = ['abandon', 'admire', 'attach', 'beast', 'bully', 'cancer', 'chore', 'compliment', 'comprehend', 'compromise', 'confidence', 'crowd', 'dedecate', 'desperate', 'discourage', 'distinguish', 'elaborate', 'endure', 'enhance', 'epidemic', 'era', 'establish', 'faith', 'fame', 'famine', 'gravity', 'harvest', 'heal', 'heritage', 'hesitate', 'impose', 'indispensable', 'ingredient', 'invent', 'invite', 'neglect', 'nutrition', 'outcome', 'parliament', 'pity', 'primitive', 'proverb', 'radical', 'refuse', 'reinforce', 'settle', 'shame', 'substitute', 'temptation', 'wheat', 'praise', 'burst', 'exclaim', 'compel', 'portray', 'drag', 'recall', 'be short of', 'be nothing short of', 'decision', 'meditation', 'crucial', 'reputation', 'shrink', 'ladder', 'resolve', 'triumph', 'grave', 'diet', 'fundamental', 'crop', 'prior', 'overall', 'fix-up', 'virtually', 'figure out', 'a great deal of', 'negotiate', 'handful', 'absorb', 'elaborate on', 'barely', 'outcome', 'civil', 'cast out', 'cast', 'shed', 'hang', 'brief', 'seldom', 'scarce'] ;
-var meaning= ['を諦める、を見捨てる', 'に敬服する、を称賛する、に感心する', 'を付ける、を添付する、に愛着を感じさせる', '動物、獣', 'いじめっ子、いじめる', 'がん', '雑用、退屈な仕事、日常の雑事', '賛辞、お世辞', 'をしっかりと理解する', '妥協、妥協する', '信頼、自信', '群衆、に群がる、群がる', 'を捧げる', '絶望的な、欲しくてたまらない、必死の', 'を落胆させる、を妨害する', 'を見分ける、を区別する、区別す る', '手の込んだ、詳しく述べる', 'に耐える', 'を高める、をよりよくする', '伝染性の、流行の、伝染病、流行', '時代', 'を設立する、を確立する、を立証する', '信頼、信仰', '名声', '飢饉、物質の不足', '重力', '収穫物、収穫時期、収穫する', 'いやす、いえる', '相続財産、文化遺産', 'ためらう', '課す、つけこむ', '不可欠な', '材料', '投資する', '招く、依頼する', '無視、怠慢、無視する、怠ける', '栄養物', '結果', '議会', '哀れみ、気の毒に思う', '原始の', 'ことわざ', '根本的な、急進的な', '拒む、ごみ', '強化する', '落ち着かせる、解決する、定住する', '恥ずかしさ、羞恥心', '代用する、代用品', '誘惑物', '小麦', ' 賞賛する、賞賛', '突発する、破裂する', '叫ぶ', 'することを強いる', '描く、描写する', 'のろのろと進む', '思い出す', 'が不足している', 'に他ならない', '決意', '瞑想、熟考', '必要不可欠の', '名声', '尻込 みする', '梯子', '決意する', '勝利', '重大な、墓穴', '食事', '基本的な', '作物', '前の', '全体の', '理解する', 'ほとんど、実質的には', '理解する', '多量の', '交渉する', '一つかみ程度の', '理解する、吸 収する', '詳しく述べる', 'かろうじて～する', '結果', '民間人の', '追い出す', '投げかける、役を割り当てる', '光を当てる、涙を流す、小屋', 'つるす', '短期間の、簡潔な', 'めったに～しない', '不足して'] ;
+//アナログデータ
+//var word = ['abandon', 'admire', 'attach', 'beast', 'bully', 'cancer', 'chore', 'compliment', 'comprehend', 'compromise', 'confidence', 'crowd', 'dedecate', 'desperate', 'discourage', 'distinguish', 'elaborate', 'endure', 'enhance', 'epidemic', 'era', 'establish', 'faith', 'fame', 'famine', 'gravity', 'harvest', 'heal', 'heritage', 'hesitate', 'impose', 'indispensable', 'ingredient', 'invent', 'invite', 'neglect', 'nutrition', 'outcome', 'parliament', 'pity', 'primitive', 'proverb', 'radical', 'refuse', 'reinforce', 'settle', 'shame', 'substitute', 'temptation', 'wheat', 'praise', 'burst', 'exclaim', 'compel', 'portray', 'drag', 'recall', 'be short of', 'be nothing short of', 'decision', 'meditation', 'crucial', 'reputation', 'shrink', 'ladder', 'resolve', 'triumph', 'grave', 'diet', 'fundamental', 'crop', 'prior', 'overall', 'fix-up', 'virtually', 'figure out', 'a great deal of', 'negotiate', 'handful', 'absorb', 'elaborate on', 'barely', 'outcome', 'civil', 'cast out', 'cast', 'shed', 'hang', 'brief', 'seldom', 'scarce'] ;
+//var meaning= ['を諦める、を見捨てる', 'に敬服する、を称賛する、に感心する', 'を付ける、を添付する、に愛着を感じさせる', '動物、獣', 'いじめっ子、いじめる', 'がん', '雑用、退屈な仕事、日常の雑事', '賛辞、お世辞', 'をしっかりと理解する', '妥協、妥協する', '信頼、自信', '群衆、に群がる、群がる', 'を捧げる', '絶望的な、欲しくてたまらない、必死の', 'を落胆させる、を妨害する', 'を見分ける、を区別する、区別す る', '手の込んだ、詳しく述べる', 'に耐える', 'を高める、をよりよくする', '伝染性の、流行の、伝染病、流行', '時代', 'を設立する、を確立する、を立証する', '信頼、信仰', '名声', '飢饉、物質の不足', '重力', '収穫物、収穫時期、収穫する', 'いやす、いえる', '相続財産、文化遺産', 'ためらう', '課す、つけこむ', '不可欠な', '材料', '投資する', '招く、依頼する', '無視、怠慢、無視する、怠ける', '栄養物', '結果', '議会', '哀れみ、気の毒に思う', '原始の', 'ことわざ', '根本的な、急進的な', '拒む、ごみ', '強化する', '落ち着かせる、解決する、定住する', '恥ずかしさ、羞恥心', '代用する、代用品', '誘惑物', '小麦', ' 賞賛する、賞賛', '突発する、破裂する', '叫ぶ', 'することを強いる', '描く、描写する', 'のろのろと進む', '思い出す', 'が不足している', 'に他ならない', '決意', '瞑想、熟考', '必要不可欠の', '名声', '尻込 みする', '梯子', '決意する', '勝利', '重大な、墓穴', '食事', '基本的な', '作物', '前の', '全体の', '理解する', 'ほとんど、実質的には', '理解する', '多量の', '交渉する', '一つかみ程度の', '理解する、吸 収する', '詳しく述べる', 'かろうじて～する', '結果', '民間人の', '追い出す', '投げかける、役を割り当てる', '光を当てる、涙を流す、小屋', 'つるす', '短期間の、簡潔な', 'めったに～しない', '不足して'] ;
+
+var word = [];
+var meaning = [];
+
+//問題csvファイルを読み込む
+var getCSV = function(){
+    var data = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
+    data.open("get", "sokudokueitanngo.csv", false); // アクセスするファイルを指定
+
+    // csvファイル読み込み失敗時のエラー対応
+    try {
+        data.send(null);
+    } catch (err) {
+        console.log(err);
+    }
+
+    var textdata = data.responseText; // 渡されるのは読み込んだCSVデータ
+    var csvData = textdata.split(/\r\n|\n/); // 改行を区切り文字として行を要素とした配列を生成
+    csvData.pop(); //改行を区切りとしているため、csvDataの末尾にからの要素が一つある。それを消す。
+
+    var temporaryList = [];
+    console.log(csvData);
+
+    //csvDataでは '1,aabandon,を諦める、を見捨てる' が一つの配列要素になっている。
+     //これを「,」で区切って、temporaryListに入れる。temporaryList = ['1', 'aabandon', 'を諦める、を見捨てる']となる。
+     //これの要素１をwordに、要素２をmeaningに入れる。
+    for(var i=0; i < csvData.length; ++i ){
+        temporaryList = csvData[i].split(',')
+        word.push( temporaryList[1] );
+        meaning.push(temporaryList[2]);
+    }
+}
+
+getCSV(); //最初に実行される
+console.log(`word=${word},meaning=${meaning}`);
 
 var Word = word;
 var Meaning = meaning;
@@ -116,6 +151,7 @@ var selectMenu = function(dataType){
 
 }
 
+//リセットボタン
 var resetButton = function(){
     var confirmation = confirm("この操作は取り消せません。\n間違えた問題をリセットしますか？");
     //「OK」を選択したらtrue が返ってくる
@@ -125,7 +161,6 @@ var resetButton = function(){
         console.log(remindQuestion,remindCorrectAnswer);
         selectMenu("reminddata"); //セレクトメニュー画面を更新
     }
-
 }
 
 
