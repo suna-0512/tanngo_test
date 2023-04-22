@@ -187,6 +187,9 @@ var makeQuestions = function(){
 
     WL = Word.length;
 
+    //入力データを再取得
+    numRangeMax = document.getElementById("num_range_max");  
+    numRangeMin = document.getElementById("num_range_min");
 
     //入力された問題の範囲を取得
     var rangeMax = parseInt(numRangeMax.value) ;
@@ -244,6 +247,8 @@ var makeQuestions = function(){
         default:
             break
     }
+    console.log(n)
+    console.log(rangeMax,rangeMin)
     
     console.log(Qtype,Qalign,n)
 
