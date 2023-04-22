@@ -140,6 +140,19 @@ body{
     
 }
 
+/*データのソースファイルを選ぶ*/
+.sourceButton{
+    opacity: 0.3; 
+    border-radius: 5px;
+    border: 1px solid rgb(0, 168, 196);
+    padding: 10px 20px;
+    font-size: 40px;
+    color: rgb(0, 168, 196);
+    background-color: rgb(245, 245, 245);
+    margin: 50px;
+}
+
+
 /*すべての問題か間違えた問題か*/
 .databutton{
     opacity: 0.3; 

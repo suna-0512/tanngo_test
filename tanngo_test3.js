@@ -6,9 +6,12 @@ var word = [];
 var meaning = [];
 
 //問題csvファイルを読み込む
-var getCSV = function(){
+var getCSV = function(csvfilename){
+    word = []; //reset
+    meaning = []; //reset
+    console.log(csvfilename)
     var data = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
-    data.open("get", "sokudokueitanngo.csv", false); // アクセスするファイルを指定
+    data.open("get", csvfilename, false); // アクセスするファイルを指定
 
     // csvファイル読み込み失敗時のエラー対応
     try {
@@ -33,8 +36,7 @@ var getCSV = function(){
         meaning.push(temporaryList[2]);
     }
 }
-
-getCSV(); //最初に実行される
+getCSV('sokudokueitanngo.csv'); 
 console.log(`word=${word},meaning=${meaning}`);
 
 var Word = word;
@@ -161,6 +163,19 @@ var resetButton = function(){
         console.log(remindQuestion,remindCorrectAnswer);
         selectMenu("reminddata"); //セレクトメニュー画面を更新
     }
+}
+
+//データのソースを変更する
+var selectQsource = function(csvfilename){
+    getCSV(csvfilename+'.csv');
+    selectMenu('alldata'); //問題選択画面を更新
+    //選択した色をリセット
+    var sourceButton = document.getElementsByClassName("sourceButton");
+    sourceButton[0].style.opacity = "0.3";
+    sourceButton[1].style.opacity = "0.3";
+    sourceButton[2].style.opacity = "0.3";
+    //選択したものだけ色付ける
+    document.getElementById(csvfilename).style.opacity = "1";
 }
 
 

@@ -48,8 +48,14 @@
         <p id="point"></p>
     </div>
 
-    <!--次の問題に進むボタン-->
+    <!--問題選択欄-->
     <div class="nextButton">
+
+        <div>
+            <input class="sourceButton" id="sokudokueitanngo" type="button" value="速読英単語" onclick="selectQsource('sokudokueitanngo')">
+            <input class="sourceButton" id="gizyutueigo" type="button" value="技術英語" onclick="selectQsource('gizyutueigo')">
+            <input class="sourceButton" id="seibutu" type="button" value="生物" onclick="selectQsource('seibutu')">
+        </div>
 
         <!--すべてか間違えた問題からか-->
         <form name="Qtype">
