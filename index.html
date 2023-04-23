@@ -45,22 +45,26 @@
     <div class="checks">
         <!--判定を表示ボタン-->
         <input class="button checkButton" type = "button" value="採点" onclick="checkButton_pushed()">
+        <p class="notes">※不正解は0点、部分正解は0.5点、完全正解は1点として得点を計算します。</p>
         <p id="point"></p>
     </div>
 
     <!--問題選択欄-->
     <div class="nextButton">
 
-        <div>
-            <input class="sourceButton" id="sokudokueitanngo" type="button" value="速読英単語" onclick="selectQsource('sokudokueitanngo')">
-            <input class="sourceButton" id="gizyutueigo" type="button" value="技術英語" onclick="selectQsource('gizyutueigo')">
-            <input class="sourceButton" id="seibutu" type="button" value="生物" onclick="selectQsource('seibutu')">
+        <!--問題ソースを選択するボタン-->
+        <div class="sourceButtons">
+            <span class="label_center">使用する問題ソース</span>
+            <input class="whitebutton sourceButton" id="sokudokueitanngo" type="button" value="速読英単語" onclick="selectQsource('sokudokueitanngo')">
+            <input class="whitebutton sourceButton" id="gizyutueigo" type="button" value="技術英語" onclick="selectQsource('gizyutueigo')">
+            <input class="whitebutton sourceButton" id="seibutu" type="button" value="生物" onclick="selectQsource('seibutu')">
         </div>
 
         <!--すべてか間違えた問題からか-->
-        <form name="Qtype">
-            <input class="databutton" id="alldataButton" type="button" value="すべての問題から出題" onclick="selectMenu('alldata')"> 
-            <input class="databutton" id="reminddataButton" type="button" value="間違えた問題から出題" onclick="selectMenu('reminddata')">
+        <form class="Qtype" name="Qtype">
+            <span class="label_center">問題の形式を選択</span>
+            <input class="whitebutton" id="alldataButton" type="button" value="すべての問題から出題" onclick="selectMenu('alldata')"> 
+            <input class="whitebutton" id="reminddataButton" type="button" value="間違えた問題から出題" onclick="selectMenu('reminddata')">
         </form>
 
         <!--メニュー-->
@@ -73,20 +77,22 @@
                 <label for="order" id="labelForOrderbutton">順番に問題を出す</label>
             </form>
 
-            <!--問題の数を選ぶ-->
-            <div class="Qnum">
-            <label for="Qnum" class="label_mini">出題数</label>                
-                <input class="selectNum" id="max_num" type="number" max="100" min="0" placeholder="問題数を入力" value="10">
-                <p>問</p>
-            </div>
+            <div>
+                <!--問題の数を選ぶ-->
+                <div class="Qnum">
+                <label for="Qnum" class="label_mini">出題数</label>                
+                    <input class="selectNum" id="max_num" type="number" max="100" min="0" placeholder="問題数を入力" value="10">
+                    <p>問</p>
+                </div>
 
-            <!--問題の範囲を選ぶ-->
-            <div class="Qrange">
-                <label for="Qrange" class="label_mini">出題範囲</label>
-                <input class="selectNum" id="num_range_min" type="number" min="0" placeholder="はじめの問題番号を入力" value="1">
-                <p>番 ～ </p>
-                <input class="selectNum" id="num_range_max" type="number" min="0" placeholder="終わりの問題番号を入力" value="10">  
-                <p>番</p>
+                <!--問題の範囲を選ぶ-->
+                <div class="Qrange">
+                    <label for="Qrange" class="label_mini">出題範囲</label>
+                    <input class="selectNum" id="num_range_min" type="number" min="0" placeholder="はじめの問題番号を入力" value="1">
+                    <p>番 ～ </p>
+                    <input class="selectNum" id="num_range_max" type="number" min="0" placeholder="終わりの問題番号を入力" value="10">  
+                    <p>番</p>
+                </div>
             </div>
 
         </div>

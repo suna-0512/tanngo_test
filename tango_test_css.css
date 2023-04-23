@@ -45,14 +45,15 @@ body{
     gap: 30px ;
     justify-content: center;
     border: 3px rgb(212, 212, 212) solid;
+    border-radius: 0px;
 }
 
 .header{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(255, 0, 0);
-    background: repeating-linear-gradient(-45deg ,rgb(255, 255, 255), rgb(233, 233, 233) 15px);
-    border-bottom: 7px rgb(205, 205, 205) double;
+    background-color: red;
+    background: repeating-linear-gradient(-45deg ,white, rgb(233, 233, 233) 15px);
+    border-bottom: 7px rgb(212, 212, 212) double;
 }
 .header p{
     margin: 10px;
@@ -62,7 +63,7 @@ body{
 .Monndai{
     display: flex;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-top: none;
     font-size: 35px;
 }
@@ -75,7 +76,7 @@ body{
     flex-direction: column;
 }
 .questions{
-    border-bottom:2px rgb(186, 203, 201) solid ;
+    border-bottom:2px rgb(212, 212, 212) solid ;
     height: 60px;
 }
 #judge{
@@ -102,7 +103,7 @@ body{
 .InputAnswers{
     font-size: 37px;
     border: none;
-    border-bottom: 1px rgb(186, 203, 201) solid;
+    border-bottom: 1px rgb(212, 212, 212) solid;
     height: px;
 }
 
@@ -112,7 +113,8 @@ body{
     align-items: center;
     margin: 0;
     padding: 50px;
-    font-size: 50px;
+    font-size: 40px;
+    text-align: center;
     color: red;
 }
 .checkButton{
@@ -122,8 +124,13 @@ body{
     background-color: rgb(255, 176, 176);
     color: rgb(255, 0, 0);
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 50px;
     border: 5px rgb(255, 127, 127) dashed;
+}
+.notes{
+    font-size: 20px;
+    text-align: center;
+    color: gray;
 }
 
 
@@ -133,39 +140,57 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 15px rgb(202, 202, 202) double;
+    border-top: 15px rgb(212, 212, 212) double;
     padding: 10px;
     padding: 80px 0 200px 0;
     font-size: 40px;
-    
 }
 
 /*データのソースファイルを選ぶ*/
-.sourceButton{
-    opacity: 0.3; 
-    border-radius: 5px;
-    border: 1px solid rgb(0, 168, 196);
-    padding: 10px 20px;
-    font-size: 40px;
+.sourceButtons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 30px 50px;
+    margin-bottom: 100px;
+    border-top: 4px dotted rgb(212, 212, 212);
+}
+.label_center{
     color: rgb(0, 168, 196);
-    background-color: rgb(245, 245, 245);
-    margin: 50px;
+    font-size: 25px;
+    position: absolute;
+    top: -20px;
+    background-color: white;
+    padding: 0 20px;
+}
+#sokudokueitanngo{
+    opacity: 1;
 }
 
 
 /*すべての問題か間違えた問題か*/
-.databutton{
+.Qtype{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: 4px dotted rgb(212, 212, 212);
+    padding-top: 50px;
+}
+.whitebutton{
     opacity: 0.3; 
-    border-radius: 5px;
+    border-radius: 30px;
     border: 1px solid rgb(0, 168, 196);
-    padding: 10px 20px;
+    padding: 10px 30px;
+    margin: 5px;
     font-size: 40px;
     color: rgb(0, 168, 196);
-    background-color: rgb(245, 245, 245);
+    background-color: white;
 }
 #alldataButton{
     opacity: 1;
-    
+}
+.whitebutton:hover{
+    background-color: rgba(157, 220, 223, 0.692);
 }
 
 /*ここから順番orランダム、出題数、出題範囲*/
@@ -186,14 +211,15 @@ form{
     appearance: none;
 }
 form label{
+    color: rgb(0, 168, 196);
     border-bottom: dotted rgb(0, 168, 196) 5px;
 }
 #labelForRandombutton{
     opacity: 0.2;
 }
 .radioButton[type="radio"]{
-    border: 2px dotted rgb(176, 176, 176);
-    border-radius: 10px;
+    border: 2px dotted rgb(212, 212, 212);
+    border-radius: 30px;
     width: 50px;
     height: 50px;
     margin-right: 10px;
@@ -202,16 +228,11 @@ form label{
 .radioButton[type="radio"]:active{
     width: 40px;
     height: 40px;
-    -webkit-width: 40px;
-    -webkit-height: 40px;
 }
 .radioButton[type="radio"]:checked{
-    border: 2px solid #555;
+    border: 2px solid gray;
     background: rgba(0, 149, 160, 0.703);
     background-clip: content-box ;
-    -webkit-border: 2px solid #555;
-    -webkit-background: rgba(0, 168, 196, 0.703);
-    -webkit-background-clip: content-box ;
 }
 
 /*出題数、出題範囲*/
@@ -226,7 +247,7 @@ form label{
 }
 .label_mini{
     font-size: 30px;
-    color: gray;
+    color: rgb(0, 168, 196);
     border-bottom:0.5px rgb(0, 168, 196) solid ;
 }
 /*出題数*/
@@ -235,6 +256,7 @@ form label{
     align-items: center;
     gap: 10px;
     margin: 30px 0 20px 0;
+    color: rgb(0, 107, 126);
 }
 .Qnum p{
     margin: 0;
@@ -245,6 +267,7 @@ form label{
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+    color: rgb(0, 107, 126);
 }
 .Qrange p{
     margin: 0;
@@ -261,22 +284,22 @@ form label{
     margin: 5px;
     text-align: center;
     font-size: 30px;
-    color: rgb(133, 133, 133);
+    color: gray;
 }
 #resetButton{
     font-size: 30px;
     width: 400px;
     height: 80px;
-    border: 3.5px rgb(0, 0, 0) dashed;
+    border: 3.5px black dashed;
     border-radius: 100px;
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    background-color: white;
 }
 #resetButton:hover{
     -webkit-border: solid;
     background-color: gray;
     color: white;
-    border: 5px rgb(0, 0, 0)  solid;
+    border: 5px black  solid;
 }
 #resetButton:active{
     -webkit-font-size: 12px;
@@ -293,7 +316,7 @@ form label{
     border: 5px rgb(0, 168, 196) dashed;
     color: rgb(0, 168, 196);
     background-color: rgba(157, 220, 223, 0.692);
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 
@@ -304,10 +327,7 @@ form label{
 .button:hover{
     opacity: 1;
     border: solid 5px;
-    -webkit-opacity: 1;
-    -webkit-border: solid;
 }
 .button:active{
-    -webkit-font-size: 12px;
     font-size: 12px;
 }
