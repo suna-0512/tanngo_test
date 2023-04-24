@@ -125,6 +125,7 @@ body{
     color: rgb(255, 0, 0);
     font-weight: bold;
     border-radius: 50px;
+    z-index: 1;
     border: 5px rgb(255, 127, 127) dashed;
 }
 .notes{
@@ -179,6 +180,7 @@ body{
 .whitebutton{
     opacity: 0.3; 
     border-radius: 30px;
+    z-index: 1;
     border: 1px solid rgb(0, 168, 196);
     padding: 10px 30px;
     margin: 5px;
@@ -278,7 +280,7 @@ form label{
     margin-top:30px;
     padding: 20px;
     border: solid 3px black;
-    border-radius: 7px;
+    border-radius: 15px;
 }
 .resetgroup p{
     margin: 5px;
@@ -292,17 +294,16 @@ form label{
     height: 80px;
     border: 3.5px black dashed;
     border-radius: 100px;
+    z-index: 1;
     color: black;
     background-color: white;
 }
 #resetButton:hover{
-    -webkit-border: solid;
     background-color: gray;
     color: white;
     border: 5px black  solid;
 }
 #resetButton:active{
-    -webkit-font-size: 12px;
     font-size: 12px;
     
 }
