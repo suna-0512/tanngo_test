@@ -168,6 +168,9 @@ body{
     opacity: 1;
 }
 
+#English{
+    opacity: 1;
+}
 
 /*すべての問題か間違えた問題か*/
 .Qtype{
