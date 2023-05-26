@@ -1,43 +1,80 @@
-﻿1,biceps,二頭筋,筋肉
-2,triceps,三頭筋,筋肉
-3,pectoralis major,大胸筋,筋肉
-4,latissimus dorsi,広背筋,筋肉
-5,external oblique(abdomen),外腹斜筋（腹部）,筋肉
-6,rectus abdominis(in sheath),腹直筋（鞘で）,筋肉
-7,gluteus medius,中殿筋,筋肉
-8,gluteus maximus,大臀筋,筋肉
-9,vastus lateralis,外側広筋,筋肉
-10,vastus intermedius,中間広筋,筋肉
-11,rectus femoris,大腿直筋,筋肉
-12,vastus medialis,内側広筋,筋肉
-13,quadriceps femoris,四頭筋,筋肉
-14,semitendinosus,半腱様筋,筋肉
-15,biceps femoris,大腿二頭筋,筋肉
-16,trapezius,僧帽筋,筋肉
-17,deltoid,三角筋,筋肉
-18,triceps,三頭筋,筋肉
-19,gastrocnemius,腓腹筋,筋肉
-20,soleus,ヒラメ筋,筋肉
-1,Mandible,下顎骨,骨
-2,Clavicle,鎖骨,骨
-3,Sternum,胸骨,骨
-4,Spine(vertebrae),脊椎（椎骨）,骨
-5,Ilium,腸骨,骨
-6,Carpals,手根骨部,骨
-7,Sacrum,仙骨,骨
-8,Phalanges of hand,手の指骨,骨
-9,Pubic bone,恥骨,骨
-10,Femur,大腿骨,骨
-11,Fibula,腓骨,骨
-12,Patella,膝蓋骨,骨
-13,Tibia,脛骨,骨
-14,Tarsals,足根骨,骨
-15,Phalanges of feet,足の指骨,骨
-16,Ischium,坐骨,骨
-17,Hip joint,股関節,骨
-18,Coccyx bone,尾骨の骨,骨
-19,Radius,ラディウス,骨
-20,Ulna,尺骨,骨
-21,Humerus,上腕骨,骨
-22,Scapula,肩甲骨,骨
-23,Maxilla,小顎,骨
+﻿1,biceps,二頭筋,筋肉,
+2,triceps,三頭筋,筋肉,
+3,pectoralis major,大胸筋,筋肉,
+4,latissimus dorsi,広背筋,筋肉,
+5,external oblique(abdomen),外腹斜筋（腹部）,筋肉,
+6,rectus abdominis(in sheath),腹直筋（鞘で）,筋肉,
+7,gluteus medius,中殿筋,筋肉,
+8,gluteus maximus,大臀筋,筋肉,
+9,vastus lateralis,外側広筋,筋肉,
+10,vastus intermedius,中間広筋,筋肉,
+11,rectus femoris,大腿直筋,筋肉,
+12,vastus medialis,内側広筋,筋肉,
+13,quadriceps femoris,四頭筋,筋肉,
+14,semitendinosus,半腱様筋,筋肉,
+15,biceps femoris,大腿二頭筋,筋肉,
+16,trapezius,僧帽筋,筋肉,
+17,deltoid,三角筋,筋肉,
+18,triceps,三頭筋,筋肉,
+19,gastrocnemius,腓腹筋,筋肉,
+20,soleus,ヒラメ筋,筋肉,
+1,Mandible,下顎骨,骨,
+2,Clavicle,鎖骨,骨,
+3,Sternum,胸骨,骨,
+4,Spine(vertebrae),脊椎（椎骨）,骨,
+5,Ilium,腸骨,骨,
+6,Carpals,手根骨部,骨,
+7,Sacrum,仙骨,骨,
+8,Phalanges of hand,手の指骨,骨,
+9,Pubic bone,恥骨,骨,
+10,Femur,大腿骨,骨,
+11,Fibula,腓骨,骨,
+12,Patella,膝蓋骨,骨,
+13,Tibia,脛骨,骨,
+14,Tarsals,足根骨,骨,
+15,Phalanges of feet,足の指骨,骨,
+16,Ischium,坐骨,骨,
+17,Hip joint,股関節,骨,
+18,Coccyx bone,尾骨の骨,骨,
+19,Radius,ラディウス,骨,
+20,Ulna,尺骨,骨,
+21,Humerus,上腕骨,骨,
+22,Scapula,肩甲骨,骨,
+23,Maxilla,小顎,骨,
+1,Cribriform plate,篩板,呼吸器,
+2,Hard palate,硬口蓋,呼吸器,
+3,Soft palate,軟口蓋,呼吸器,
+4,Tongue,舌,呼吸器,
+5,Epiglottis,喉頭蓋,呼吸器,
+6,Cricoid cartilage,輪状軟骨,呼吸器,
+7,right lung,右肺,呼吸器,
+8,bronchioles,細気管支,呼吸器,
+9,Eustachiartube,耳管,呼吸器,
+10,Thyroic cartilage,甲状軟骨,呼吸器,
+11,Trachea,気管,呼吸器,
+12,Main bronchus,主気管支,呼吸器,
+13,left lung,左肺,呼吸器,
+1,Oral cavity proper,口腔プロパー,消化管,
+2,tongue,舌,消化管,
+3,Pharynx,咽頭,消化管,
+4,Esphagus,食道,消化管,
+5,Liver,肝臓,消化管,
+6,Stomach,胃,消化管,
+7,Transverse colon,横行結腸,消化管,
+8,Ascendeing colon,上行結腸,消化管,
+9,Descending colon,下行結腸,消化管,
+10,Anal canal,肛門管,消化管,
+11,Anus,肛門,消化管,
+12,Rectum,直腸,消化管,
+1,Frontal lobe,前頭葉,脳,
+2,Corpus callosum,脳梁,脳,
+3,Thalamus,視床,脳,
+4,Parietal lobe,頭頂葉,脳,
+5,Occipital lobe,後頭葉,脳,
+6,Pituitary gland,脳下垂体,脳,
+7,Midbrain,中脳,脳,
+8,Temporal lobe,側頭葉,脳,
+9,Cerbellum,小脳,脳,
+10,Pons,橋,脳,延髄と小脳を中脳に結びつける神経繊維の帯
+11,Medulla,延髄,脳,
+12,spinal cord,脊髄,脳,
