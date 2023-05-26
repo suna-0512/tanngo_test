@@ -89,6 +89,11 @@ var selectMenu = function(dataType){
     if (dataType == "alldata"){
         console.log("alldata1");
         selectMenuElement = `
+            <!--英語を答えるか日本語を答えるか-->
+            <div>
+                <input class="whitebutton QswitchButton" id="English" type="button" value="日本語→英語" onclick="selectQswitch('English')">
+                <input class="whitebutton QswitchButton" id="Japanese" type="button" value="英語→日本語" onclick="selectQswitch('Japanese')">
+            </div>
             <!--ランダムか順番か-->
             <form name="Qalign">
                 <input type="radio" class="radioButton" id="random" name="selectQalign" value="random" >
@@ -209,13 +214,18 @@ var makeQuestions = function(){
 
     WL = Word.length;
 
-    //入力データを再取得
-    numRangeMax = document.getElementById("num_range_max");  
-    numRangeMin = document.getElementById("num_range_min");
+    
+    
+    if (Word == word || Word == meaning){
+        //入力データを再取得
+        numRangeMax = document.getElementById("num_range_max");  
+        numRangeMin = document.getElementById("num_range_min");
+        //入力された問題の範囲を取得
+        var rangeMax = parseInt(numRangeMax.value) ;
+        var rangeMin = parseInt(numRangeMin.value) -1;
+    }
+    
 
-    //入力された問題の範囲を取得
-    var rangeMax = parseInt(numRangeMax.value) ;
-    var rangeMin = parseInt(numRangeMin.value) -1;
 
 
     //間違えた問題のとき、出題範囲の入力の影響を受けるのを防止
