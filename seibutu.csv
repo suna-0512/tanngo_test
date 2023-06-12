@@ -1,3 +1,418 @@
-﻿1,methyl,メチル
-2,ethane,エタン
-3,propane,プロパン
+﻿,context,コンテクスト,1
+,perspective,視点,1
+,consumer,消費者（患者）,1
+,issue,問題,1
+,needs,ニーズ,1
+,passive receiver,受動的な受信者,1
+*,promote (health),（健康を）促進する,1
+*,disease,疾患,1
+*,infirmity,虚弱,1
+*,prevention,防止,1
+,lifestyle,ライフスタイル,1
+,collaborate,協力する,1
+,optimal ,最適な,1
+,state,状態,1
+*,well-being,幸福,1
+,realize 2,実現2,1
+,capacities,容量,1
+,environment,環境,1
+*,subjective,主観的な,1
+*,objective,客観的に,1
+,competent,有能,1
+,multicultural,多文化,1
+*,diabetes,糖尿病,1
+,standards,標準,1
+,conscience,良心,1
+,domain,領域,1
+,unique,個性的,1
+*,leprosy,ハンセン病,1
+*,Alzheimer’s,アルツハイマー病,1
+*,epilepsy,てんかん,1
+*,"holism, holistic",全体論的な、全体的な,1
+,outcome,結果,1
+,acknowledge,認める,1
+,initial,初期,1
+,interrelate,相互に関連させる,1
+,rapport,信頼関係,1
+*,moral,道徳の,1
+,client,クライアント,1
+*,dietician,栄養士,1
+*,"PT, physical therapist",PT、理学療法士,1
+*,OT,occupational therapist 作業療法士,1
+*,RN,registered nurse　登録看護師,1
+*,LPN,licensed practical nurse　資格を持った看護師,1
+*,RPN,registered psychiatric nurse　登録精神科看護師,1
+*,MD,medical doctor 医学博士,1
+*,GP,general practitioner　総合診療医,1
+*,SW,social worker　生活相談員,1
+*,RT,respiratory therapist　呼吸療法士,1
+,professional,プロ,1
+*,patient,忍耐強い,1
+*,surgeon,外科医,1
+*,dental,歯科,1
+,vehicle,車両,1
+*,measles,麻疹,1
+*,treatment,処理,1
+,swallow,飲み込む,1
+*,tonsillectomy,扁桃腺摘出術,1
+*,mumps,おたふく風邪,1
+*,"drugstore, chemist, pharmacy",ドラッグストア、薬局、薬局,1
+,refer to,参照する,1
+,degree (educational),学位（教育）,1
+*,prescribe ,処方する,1
+*,fill (an order) ,（注文を）満たす,1
+*,dispense,分配する,1
+*,over-the-counter,店頭,1
+*,prescription,処方,1
+*,medication,投薬,1
+*,penicillin,ペニシリン,1
+*,cyclobenzaprine,シクロベンザプリン,1
+,"concentrate, concentration",集中力、集中力,1
+,alert,警告,1
+*,tablet,タブレット,1
+*,pill,ピル,1
+,"couch, sofa",ソファ、ソファ,1
+,killing me,私を殺す,1
+,drowsy,眠い,1
+*,pharmacology,薬理学,1
+*,pharmaceutical,医薬品,1
+*,tetracycline,テトラサイクリン,1
+*,antibiotic,抗生物質,1
+*,allergic,アレルギー性,1
+*,"oral, orally",口頭、口頭で,1
+*,ampicillin,アンピシリン,1
+*,sedative,鎮静剤,1
+*,injection,注入,1
+*,arrhythmia,不整脈,1
+*,ointment,軟膏,1
+*,The Musculoskeletal System,筋骨格系,2
+*,"(for radiology, RALP orientation)",(放射線科、RALP オリエンテーション),2
+*,organic,オーガニック,2
+*,cell,細胞,2
+*,tissue,組織,2
+*,organ,器官,2
+*,(organ) system,（臓器）系,2
+*,cavity,空洞,2
+,function,関数,2
+*,primary,主要な,2
+*,epithelia,上皮,2
+*,connective,接続詞,2
+*,"muscle (striated, smooth, and cardiac)",筋肉（横紋筋、平滑筋、心臓筋）,2
+*,nerve,神経,2
+*,abdominal cavity (abdomen),腹腔（腹部）,2
+*,thoracic cavity (thorax),胸腔（胸部）,2
+*,cranial cavity (cranium),頭蓋腔（頭蓋骨）,2
+*,oral cavity (mouth),口腔（口）,2
+*,pelvic cavity (pelvis),骨盤腔（骨盤）,2
+*,posture,姿勢,2
+*,gait,歩き方,2
+*,voluntary,自発的な,2
+*,involuntary,不本意な,2
+,comprise,含む,2
+*,spleen,脾臓,2
+*,kidney,腎臓,2
+*,nutrient,栄養素,2
+,grasp,把握,2
+,manipulate,操作する,2
+,muscle,筋,2
+,skeleton,スケルトン,2
+,musculoskeletal,筋骨格系,2
+*,femur,大腿骨,2
+*,clavicle,鎖骨,2
+*,"spine (vertebrae) (cervical, thoracic and lumbar)",脊椎（椎骨）（頸椎、胸椎、腰椎）,2
+*,calcaneus,踵骨,2
+*,scapula,肩甲骨,2
+*,patella,膝蓋骨,2
+*,tibia (w/ fibula),脛骨（腓骨あり）,2
+*,coccyx,尾てい骨,2
+*,rib,肋骨,2
+*,mandible,下顎骨,2
+*,radius (w/ ulna),橈骨（尺骨を含む）,2
+*,pathological,病的な,2
+*,fracture,骨折,2
+*,sprain ,捻挫,2
+*,laceration,裂傷,2
+*,osteoarthritis,変形性関節症,2
+*,arthritis,関節炎,2
+,wheelchair,車椅子,2
+,splint,添え木,2
+,cane,杖,2
+,walker,ウォーカー,2
+,scooter,スクーター,2
+*,triage,識別救急(多くの傷病者らが居る状況において、傷病の緊急度や重症度に応じた優先度を決めること),2
+*,analgesic,鎮痛剤,2
+*,“MOA”,「モア」,2
+*,The Cardiovascular System,心臓血管系,3
+*,circulatory,循環系,3
+*,coronary,冠状,3
+*,"arteriosclerosis, hardening of the arteries",動脈硬化、動脈硬化,3
+*,angina,狭心症,3
+*,"myocardium, heart",心筋、心臓,3
+*,"myocardial infarction, heart attack",心筋梗塞、心臓発作,3
+,demographic,人口統計,3
+,case,場合,3
+*,blood vessel:,血管：,3
+*,artery,動脈,3
+*,vein,静脈,3
+*,capillary,毛細管,3
+*,atrium,心房,3
+*,ventricle,心室,3
+*,pulmonary artery,肺動脈,3
+*,pulmonary vein,肺静脈,3
+*,aorta,大動脈,3
+*,vena cava,大静脈,3
+*,lymphatic system,リンパ系,3
+*,lymph,リンパ,3
+*,nutrient,栄養素,3
+*,hormone,ホルモン,3
+*,electrolyte,電解質,3
+,gas,ガス,3
+*,waste(s),廃棄物,3
+*,septum,隔壁,3
+,surge,うねり,3
+*,pulse,脈,3
+*,"palpate, palpation",触診する、触診する,3
+,site,部位,3
+*,prominence,隆起,3
+*,tachycardia,頻脈,3
+*,bradycardia,徐脈,3
+,pressure,圧力,3
+,reflect,反射,3
+,force,力,3
+,relaxation,リラクゼーション,3
+*,"contract, contraction",契約、収縮,3
+*,etiology,病因,3
+*,valve,バルブ,3
+*,hypertension,高血圧,3
+*,edema,浮腫,3
+*,congestion,混雑,3
+*,"swell, swollen",腫れる、腫れる,3
+*,(alveoli),(肺胞),3
+*,"(bronchus, bronchial) (these are also covered in Unit 4)",(気管支、気管支) (これらはユニット 4 でも扱われます),3
+*,The Respiratory System,,4
+,oxygen (O2),酸素（O2）,4
+,carbon dioxide (CO2),二酸化炭素(CO2),4
+,expel,追放する,4
+*,esophagus,食道,4
+*,diaphragm,横隔膜,4
+*,trachea,気管,4
+*,pharynx,咽頭,4
+*,epiglotis,喉頭蓋炎,4
+*,larynx,喉頭,4
+,substance,物質,4
+*,"inhale, inhalation / aspire, aspiration",吸う、吸い込む / 吸引する、吸引する,4
+*,"exhale, exhalation / expire, expiration",吐き出す、吐き出す / 息切れする、息切れする,4
+*,respiration ,呼吸,4
+*,"bronchus, bronchi, bronchial",気管支、気管支、気管支,4
+*,bronchiole,細気管支,4
+*,alveoli (sac),肺胞（嚢）,4
+*,abuse [əˈbjuz] (v.) abuse [əˈbjus] (n.),虐待 [əˈbjuz] (対訳) 虐待 [əˈbjus] (名詞),4
+,sniff,匂いを嗅ぐ,4
+*,chronic,慢性的な,4
+*,"diagnose, diagnosis",診断,4
+*,remission,寛解,4
+*,acute,急性,4
+*,"exacerbate, exacerbation",悪化,4
+*,symptom,症状,4
+*,emphysema,肺気腫,4
+*,asthma,喘息,4
+*,bronchitis,気管支炎,4
+*,rhinitis,鼻炎,4
+,residual,残留物,4
+,audible,可聴,4
+,whistle,ホイッスル,4
+*,wheeze,喘鳴,4
+*,apnea,無呼吸,4
+*,dyspnea,呼吸困難,4
+*,eupnea,眠気,4
+*,tachypnea,頻呼吸,4
+*,mucous,粘液,4
+*,phlegm,痰,4
+*,sputum ,喀痰,4
+,"sufficient, adequate",十分な、十分な,4
+*,vital,重要,4
+*,assess ,評価,4
+*,spirometer,肺活量計,4
+*,congestion,混雑,4
+*,inflammation ,炎症,4
+*,pathological,病的な,4
+*,abnormal,異常な,4
+*,carcinoma,癌腫,4
+*,chemotherapy,化学療法,4
+*,radiation,放射線,4
+*,malignant,悪性の,4
+*,benign,良性の,4
+*,toxin,毒素,4
+*,autoimmune,自己免疫,4
+*,decongestant,充血除去剤,4
+*,patient complaints,患者の苦情,4
+*,subjective report (of the subject/patient),（被験者/患者の）主観的な報告,4
+*,objective report (of the observer/medical worker),客観的な報告書（観察者/医療従事者の）,4
+*,"conscious, unconscious",意識のある、無意識の,4
+*,The Gastrointestinal System,胃腸系,5
+*,"digest (v.), digestive (adj.), digestion (n.)",消化（動詞）、消化（形容詞）、消化（名詞）,5
+*,"ingest, injestion",摂取する、摂取する,5
+*,"nutrient, nutrition",栄養素、栄養,5
+*,"metabolize (v.), metabolism (n.)",代謝する (v.)、代謝 (n.),5
+*,"absorb (v.), absorption (n.)",吸収 (v.)、吸収 (n.),5
+*,"eliminate (v.), elimination (n.)",除去 (v.)、除去 (n.),5
+*,alimentary tract,消化管,5
+*,stomach,胃,5
+*,small intestine(s),小腸,5
+*,"large intesine(s), colon",大腸（対）、結腸,5
+*,rectum,直腸,5
+*,anus,肛門,5
+*,canal,管,5
+*,saliva,唾液,5
+*,"masticate (v.), mastication (n.)",咀嚼 (v.)、咀嚼 (名詞),5
+*,enzymes,酵素,5
+*,carbohydrate (n.),炭水化物 (名詞),5
+*,pancreas,膵臓,5
+*,feces,糞便,5
+*,"defecate (v.), defecation (n.)",排便する (v.)、排便する (n.),5
+*,"evacuate (v.), evacuation (n.)",排泄する (v.)、排泄する (n.),5
+*,"urinate (v.), urination (n.), urine (n.) ",排尿する (v.)、排尿 (および.)、尿 (n.),5
+*,gallbladder,胆嚢,5
+*,gland,腺,5
+*,diet (n.),食事 (名詞),5
+*,"nutritionist, dietician",栄養士、栄養士,5
+*,"secrete (v.), secretion (n.)",分泌 (v.)、分泌 (n.),5
+*,"excrete (v.), excretion (n.)",排泄 (v.)、排泄 (名詞),5
+*,"nitrogen (n.), nitrogenous (adj.)",窒素 (名詞)、窒素含有 (形容詞),5
+*,home remedy,家庭療法,5
+*,over-the-counter,店頭,5
+*,prescription,処方箋,5
+*,diarrhea,下痢,5
+*,cramps,痙攣,5
+*,nausea,吐き気,5
+*,"vomit (v., n.), emesis","嘔吐 (v., n.)、嘔吐",5
+*,stomach ache,腹痛,5
+*,auscultation and palpation,聴診と触診,5
+*,stool specimen,便検体,5
+,"passing (gas), flatulence",お通じ（ガス）、鼓腸,5
+*,constipation,便秘,5
+*,sedentary,座りがちな,5
+*,motility,運動性,5
+*,digital,デジタル・電子,5
+,warrant (often as adj. warranted),証明書（多くの場合、形容詞で保証された）,5
+*,pound (unit of weight),ポンド（重量の単位）,5
+*,"stool softener, laxative",便軟化剤、下剤,5
+*,The Nervous System,神経系,6
+*,central nervous system CNS,中枢神経系 CNS,6
+*,peripheral nervous system PNS,末梢神経系 PNS,6
+*,spinal cord,脊髄,6
+*,neuron,ニューロン,6
+*,nucleus,核,6
+*,dendrite,樹状突起,6
+*,axon,軸索,6
+*,synapse,シナプス,6
+*,sensory,感覚的な,6
+*,motor,動力,6
+,transmit,伝達,6
+*,impulse,活動電位,6
+*,soma,ソーマ,6
+*,autonomic,自律性,6
+*,sympathetic system,交感神経系,6
+*,parasympathetic system,副交感神経系,6
+*,neurotransmitter,神経伝達物質,6
+*,"epinephrine, adrenaline",エピネフリン、アドレナリン,6
+*,"norepinephrine, noradrenaline",ノルアドレナリン、ノルアドレナリン,6
+*,acetylcholine,アセチルコリン,6
+*,hemisphere,半球,6
+*,frontal lobe,前頭葉,6
+*,parietal lobe,頭頂葉,6
+*,temporal lobe,側頭葉,6
+*,occipital lobe,後頭葉,6
+*,anterior,前部,6
+*,posterior,後部,6
+*,"[axial, sagittal, coronal, proximal, distal, medial, lateral, rostral, caudal, dorsal, ventral, etc.]",[軸方向、矢状方向、冠状方向、近位方向、遠位方向、内側、外側、吻側、尾側、背側、腹側など],6
+*,homeostasis,ホメオスタシス,6
+*,Broca’s aphasia,ブローカ失語症,6
+*,Wernicke’s aphasia,ウェルニッケ失語症,6
+*,meningitis,髄膜炎,6
+,"expose (v.), exposure (n.)",露出 (v.)、露出 (名詞),6
+,"impair (v.), impairment (n.)",障害 (v.)、障害 (n.),6
+*,deficiency,欠乏,6
+*,disable,無効にする,6
+,"perceive (v.), perception (n.)",知覚する (v.)、知覚する (名詞),6
+*,neuropathway,神経経路,6
+,instantaneous,瞬間的な,6
+,myriad,無数の・多種多様の,6
+,discriptor,記述語,6
+*,pain scale,痛みのスケール,6
+,classify,分類する,6
+*,scalp,頭皮,6
+*,dura,硬膜,6
+*,linear fracture,線状破壊,6
+*,comminuted fracture,粉砕骨折,6
+*,depressed skull fracture,陥没頭蓋骨骨折,6
+*,parenchymal injury,実質損傷,6
+*,concussion,脳震盪,6
+*,"contusion, bruise, bruising",打撲傷、打撲傷、打撲傷,6
+*,intracranial pressure (ICP),頭蓋内圧 (ICP),6
+*,cerebrospinal fluid (CSF),脳脊髄液 (CSF),6
+*,"deteriorate (v.), deterioration (n.)",悪化する (v.)、悪化する (n.),6
+*,"computer assisted tomography (CT, CAT scan)",コンピュータ支援断層撮影法（CT、CATスキャン）,6
+*,coma,昏睡,6
+*,"stimulus (plural, stimuli)",刺激 (複数形、刺激),6
+*,Glasgow Coma Scale,グラスゴー昏睡スケール,6
+*,trauma,トラウマ,6
+*,cerebrovascular,脳血管,6
+*,"CVA, stroke",CVA、脳卒中,6
+*,"paralyze (v.), paralysis (n.) ",麻痺する (v.)、麻痺 (名詞),6
+,"regress (v.), regression (n.)",回帰 (v.)、回帰 (n.),6
+,"devastate (v.), devastating (adj.)",壊滅的な（動詞）、壊滅的な（形容詞）,6
+*,Likert scale,リッカートスケール,6
+*,"Wounds, Viral and Bacterial Infections",創傷、ウイルスおよび細菌感染症,7
+*,wound,傷,7
+*,puncture,穿刺,7
+*,"infect (v.), infection (n.)",感染する (v.)、感染する (n.),7
+*,"extremity (often plural, extremities)",四肢 (多くの場合、複数形、四肢),7
+*,life-threatening,命を脅かす,7
+*,"decubitus ulcer, bedsore, dermal ulcer, pressure sore",褥瘡、褥瘡、皮膚潰瘍、褥瘡,7
+*,tetanus,破傷風,7
+*,integumentary system,外皮系,7
+*,suture,縫合,7
+*,contamination,汚染,7
+*,subungual,爪下,7
+*,hematoma,血腫,7
+*,"organism, microorganism",生物、微生物,7
+*,protozoa,原生動物,7
+*,"bacterium (often plural, bacteria)",細菌 (多くの場合、複数形、細菌),7
+*,"virus, virology",ウイルス、ウイルス学,7
+*,serology,血清学,7
+*,"eradicate (v.), eradication (n.)",根絶する (v.)、根絶する (n.),7
+*,varicella (type of herpes zoster) ,水痘（帯状疱疹の一種）,7
+*,"chickenpox, shingles ",水痘、帯状疱疹,7
+*,measles,麻疹,7
+*,mumps,おたふく風邪,7
+*,"HIV, AIDS",HIV、エイズ,7
+*,tuberculosis (TB),結核（TB）,7
+*,HPV,HPV,7
+*,whooping cough,百日咳,7
+*,rubella,風疹,7
+*,polio,ポリオ,7
+*,hepatitis,肝炎,7
+*,Norwalk virus,ノーウォークウイルス,7
+*,"observe, chart and treat",観察し、グラフを作成し、治療する,7
+*,"latent, dormant",潜在的な、休眠中の,7
+*,contagious,伝染性,7
+*,antibodies,抗体,7
+*,immune system,免疫系,7
+*,quarantine,検疫,7
+*,contract (v.),契約書 (対),7
+*,strain (n.),ひずみ (名),7
+*,isoniazid (INH),イソニアジド (INH),7
+,droplets,飛沫,7
+*,dormant,睡眠状態,7
+,primary,主要な,7
+,secondary,二次的,7
+,tertiary,三次,7
+*,in situ,現場で,7
+*,incision,切開,7
+*,intention (wound),意図（傷）,7
+*,granulation,造粒,7
+*,approximate,近似,7
+*,proximity,近接性,7
+*,coagulate,凝固する,7
+*,purulent,化膿性の,7
